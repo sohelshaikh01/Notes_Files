@@ -1,0 +1,16 @@
+Why to use tailwind css?
+
+# No reinventing of class names required.
+# Your CSS doesn't grow with your html and designs.
+# When you make a change, no risk of breaking existing templates!
+
+# If you try to build the site from the last video using Pure CSS, you will get.
+
+# It will not make the site slow.
+
+# It will not increase the bundle size because it send only used classes to the client. 
+
+# What about responsiveness?
+We use Different CSS using breakpoint
+
+# This utility classes are created with keeping in mind to creating better website
