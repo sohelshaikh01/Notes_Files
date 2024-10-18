@@ -2,7 +2,9 @@
 
 <div style="width: 45%">
 
-#### Stage - track -> commit -> it will store in history / log.
+# All Git And GitHub Commands
+
+### Stage - track -> commit -> it will store in history / log.
 
 `Ctrl + Insert` To Copy
 
@@ -21,6 +23,7 @@ clear To clear terminal.
 
 
 ### GITHUB
+
 - Repository Hosting Service
 
 Remote Repository:
@@ -44,6 +47,7 @@ Remote Repository:
 
 
 ### INITIAL PROCESSES
+
 `mkdir Project/FolderName` It make folder there in editor file.
 
 `ls` To go inside the folder and see files in working tree.
@@ -69,6 +73,7 @@ Displays the last 7 commits with changes / History.
 Shows a graphical commit history.
 
 **Difficult**
+
 `git log --follow [file]`
 Shows history of a specific file.
 
@@ -255,9 +260,6 @@ To see where the code folder is fork/copy/clone.
 
 <div style="width: 45%"> 
 
-<!-- -------------------------------------- -->
-<!-- -------------------------------------- -->
-
 ### CONFIGURATION / USER REGISTRATION
 
 **Configuring user information used across all local repositories.**
@@ -321,9 +323,11 @@ To restore file at staging area.
 `git restore --staged fileName.ext`
 To unstage from staging.
 
-###GIT DIFF
+### GIT DIFF
+
 Shows unstaged area changes with staging area.
 Track the changes that not have been staged.
+
 `git diff –staged`
 Shows staged area changes with last commit.
 Track the changes that have staged but not commited.
@@ -419,6 +423,7 @@ This sync your working directory branch with remote repository.
 
 
 **Make an account on GitHub then create repository by giving name, description & selecting private.**
+
  `git remote add origin https://github.com/IdofGit /Gitin1.git`
 
 `git remote`
