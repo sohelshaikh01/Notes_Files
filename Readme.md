@@ -57,7 +57,7 @@ Now we are inside folder
 
 `ls –a` To see hidden files.
 
-`ls -lart`` To show all hidden folders.
+`ls -lart` To show all hidden folders.
 
 `ls .git` To see git history of files/inner file storing and details.
 
