@@ -1,0 +1,22 @@
+// Mongo Shell Tutorial
+
+By defualt there is test db:
+
+show dbs
+// It show all database
+
+use myCart
+// To create new database or switch between them
+
+show collection
+// It show all collection/tables inside database
+
+
+db.inventory.anycommand
+db = represent current database
+inventory = represent collection / table
+
+From Lecture WDC 85: 
+
+To connect MongoDB with Nodejs we use Mongoose
+It works as the layers between for the interaction

@@ -27,7 +27,7 @@ Remote Repository:
 - `Git remote add name url`   adding url
 - `Git remote -v check url`   check url
 - `Git push -u origin master` push code
-- `Git remote set-url origin` url change url
+- `Git remote set-url origin url` url change url
 
 ### IMPORTANT TERMINOLOGY
 
