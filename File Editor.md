@@ -179,8 +179,6 @@ export default TextEditor;
 API Layer
 api/fileApi.js:
 
-javascript
-Copy code
 import axios from 'axios';
 
 const API_URL = 'http://localhost:5000/api/files';
@@ -196,8 +194,7 @@ export const updateFile = async (id, data) => {
 Main App
 App.js:
 
-javascript
-Copy code
+
 import React, { useState } from 'react';
 import FileViewer from './components/FileViewer';
 import TextEditor from './components/TextEditor';
