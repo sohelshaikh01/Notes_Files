@@ -21,6 +21,56 @@ clear To clear terminal.
 - First green `M` indicates the files are modified in staging area.
 - Second red `M` indicates the files are modified in working area.
 
+If you want to **delete all commits** from both the **remote and local repository**, essentially starting from scratch while keeping your files, follow these steps carefully. 🚀  
+
+---
+
+## **1️⃣ Remove All Commits Locally**  
+
+### **Option 1: Start Fresh Without Deleting Files**  
+```sh
+rm -rf .git  # Completely remove Git history
+git init  # Reinitialize a new repository
+git add .  # Stage all files
+git commit -m "Fresh start"  # Create a new first commit
+```
+💡 **This removes all commit history but keeps your files intact.**  
+
+
+### **2️⃣ Completely Overwrite the Remote Repository**  
+
+#### **If the remote repository already exists:**
+```sh
+git remote add origin <remote-repo-url>  # Re-add the remote repo
+git branch -M main  # Rename the branch to main
+git push --force origin main  # Force push the new empty history
+```
+🚨 **This will completely replace the remote repository’s history.**
+
+## **Alternative: Delete the Remote Repository (If Allowed)**
+If you have **full control** over the remote repository, you can delete and recreate it:
+1. **Delete the repository on GitHub/GitLab/Bitbucket.**
+2. **Create a new repository.**
+3. **Reinitialize Git and push again:**
+   ```sh
+   git init
+   git remote add origin <new-repo-url>
+   git add .
+   git commit -m "Initial commit"
+   git push -u origin main
+   ```
+
+## **Summary**
+| **Action** | **Command** |
+|------------|-------------|
+| Delete all commits locally | `rm -rf .git && git init` |
+| Remove remote commit history | `git push --force origin main` |
+| Delete remote branch & recreate | `git push origin --delete main` then `git push --force origin main` |
+| Delete remote repo (if possible) | Delete repo from GitHub/GitLab, recreate, and push fresh |
+
+🔥 **After this, your repository will be completely reset with no old commit history!** Let me know if you need more help. 🚀
+
+---
 
 ### GITHUB
 
