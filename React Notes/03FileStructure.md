@@ -85,7 +85,7 @@ In `main.jsx` it directly render the App Component in root without taking root r
 
     // It is good practice to name the component, function and component in import to capitalise
 
-    // Reload after it showerr command pallete >re
+    // Reload after it shower command pallete >re
 ```
 
 

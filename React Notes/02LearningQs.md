@@ -61,23 +61,3 @@
 - It is exists already in some other languages but it is easy in react
 + Reusing the components (Props/Properties) that are key value pairs.
 + How to propogate changes (Hooks)
-
-### Till here all react topics ends, for more feature we use further additional javascript libraries.
-
-## Addition Add-Ons to React
-+ Router (React don't have Router)
-- we need to install additional package - React-router-dom
-+ State management (React don't have state management in early days)
-- so we need use addition libraries such as Redux, Redux Toolkit(Easier that redux), Zustand, Context API (Give hooks)
-+ Class based components (Not used in latest project)
-- In present function based components are used
-+ BAAS Apps (Backend as a Service)
-- Ex: Appwrite, Firebase, Superbase Direct provide the backend
-
-## After React ? 
-+ You can directly switch to the backend
-+ React is not a complete solution in most case
-- No seo, browser render of JS(make slow in processing), no routing
-+ Framework: NextJS, Gitsby, Remix
-- Next JS allow all with including backend side code
-

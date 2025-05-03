@@ -1,6 +1,7 @@
 
 
-### If you already know React, there are a few key things you can learn next to enhance your skills and broaden your capabilities. Here's a breakdown of what to focus on:
+### React and Next JS futher Learnings
+:
 
 1. Next.js (React Framework) -
 - Since Next.js builds on top of React, it’s a natural progression. You’ll learn:

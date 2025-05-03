@@ -1,39 +1,6 @@
+## Proper Document Available in Notion.
+
 ## MongoDB Atlas is mongodb cloud service
-// We can use it for free lifetime
--> Create your atlas account
--> Go to DB
--> Create New DB
--> Choose Shared option
-// Serverless is highly requested applications
--> Choose server any like AWS
--> Give cluster name 'AnyName'
--> Give it sometime to prepare 10-15 minutes
-
--> Go to DB access
--> Create New DB User / Password
-
-// For Connect
--> Choose Deployment
--> Choose Database
--> Click to Connect 
--> Connect with any thing
--> / Connect with Compass 
--> Choose version and put password
-// Here you may need to create user
-
-// So for that 
--> Go to Database Access
--> Add New Database User
--> Or Edit Present User
-
--> Select the url string given 
--> Put it in MongoDB Compass Connection
--> Give Name, Save and Connect to it
-// This save the connection in list
--> You are connected to that cluster
--> Create New DB and Collection
--> Create New Document
-// You see this in MongoDB Atlas Collections Section
 
 🌐 MongoDB Atlas: Cloud Database Service
 

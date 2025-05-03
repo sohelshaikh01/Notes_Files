@@ -1,6 +1,6 @@
-## UPDATE:
+# UPDATE:
 
-# 1.Update / insert / replace in documents.
+### 1.Update / insert / replace in documents.
 
 db.inventory.updateOne(
     { item: "paper" }, // condition
@@ -10,12 +10,12 @@ db.inventory.updateOne(
     }
 );
 
-# To find new updated:
+### To find new updated:
 db.inventory.findOne(
     { item: "paper" }
 );
 
-# 2.To update at many with conditions:
+### 2.To update at many with conditions:
 db.inventory.updateMany(
     { "qty": {$lt: 50 } }, // condition
     {
@@ -24,10 +24,10 @@ db.inventory.updateMany(
     }
 );
 
-# To find new updated in many documents:
+### To find new updated in many documents:
 db.inventory.find(
     { "qty": {$lt: 50 } }
 );
 
-# 3.replace which replace one document with other
+### 3.replace which replace one document with other
 // This is to remained to learn.
