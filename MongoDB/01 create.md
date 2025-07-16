@@ -1,4 +1,5 @@
 # CREATE:
+
 db.invertory.insertOne({});
 db.invertory.insertMany([{}, {}]);
 
@@ -7,11 +8,11 @@ db.inventory.insertOne(
 );
 
 ### It insert data and return acknowledged and insertedId.
-// If same inserted document it insert again with new id.
+- If same inserted document it insert again with new id.
 
 ### To insert many documents in database:
 
-// Official MongoDB Data Document:
+**Official MongoDB Data Document:**
 
 db.inventory.insertMany([
     { item: "journal", qty: 25, size: {h: 14, w: 21, uno: "cm" }, status: "A" },
@@ -24,5 +25,4 @@ db.inventory.insertMany([
     { item: "canvas2", qty: 70, tags: ["copper"], size: {h: 28, w: 35.5, uom: "cm"} },
 ]);
 
-
-// Return one acknowledged and inserted id for each document.
+Return one acknowledged and inserted id for each document.

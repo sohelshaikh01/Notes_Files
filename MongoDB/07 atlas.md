@@ -2,40 +2,42 @@
 
 ## MongoDB Atlas is mongodb cloud service
 
-🌐 MongoDB Atlas: Cloud Database Service
-
 MongoDB Atlas is a cloud service provided by MongoDB
 that allows you to manage your database effortlessly and for free, indefinitely.
 
-🎯 Create Your Atlas Account
 
-1.Create your Atlas account
-Navigate to the "DB" section
-Create a New Database:
-    # Choose the Shared option
-    # For serverless and highly requested applications:
-        # Select a server provider (e.g., AWS)
-        # Provide a cluster name (e.g., 'AnyName')
-        # Wait for the setup to complete (approximately 10-15 minutes)
+**🎯 Create Your Atlas Account**
 
-🔑 Configure Access
+1. Create your Atlas account
+- Navigate to the "DB" section
+- Create a New Database:
+    - Choose the Shared option
+    -  For serverless and highly requested applications:
+        -  Select a server provider (e.g., AWS)
+        - Provide a cluster name (e.g., 'AnyName')
+        - Wait for the setup to complete (approximately 10-15 minutes)
 
-Go to "Database Access"
-Create a New Database User:
-Set a password for user
 
-🔗 Connect to Your Database
+**🔑 Configure Access**
 
-Choose Deployment Type
-Select Database
-Click "Connect"
-Connect Using Your Preferred Method:
-    MongoDB Compass:
-        Choose the version
-        Enter the password
-    You may need to create a new user if prompted
+- Go to "Database Access"
+- Create a New Database User:
+- Set a password for user
 
-🛠️ Configure Connection in MongoDB Compass
+
+**🔗 Connect to Your Database**
+
+- Choose Deployment Type
+- Select Database
+- Click "Connect"
+- Connect Using Your Preferred Method:
+    - MongoDB Compass:
+        - Choose the version
+        - Enter the password
+    - You may need to create a new user if prompted
+
+
+**🛠️ Configure Connection in MongoDB Compass**
 
 1. Go to "Database Access"
 2. Add a New Database User or Edit Existing User
@@ -45,7 +47,8 @@ Connect Using Your Preferred Method:
 
 This saves the connection in the list.
 
-🎉 Final Steps
+
+**🎉 Final Steps**
 
 1. You are now connected to your cluster
 2. Create a New Database and Collection

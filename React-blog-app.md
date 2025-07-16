@@ -1,5 +1,9 @@
 <!-- This contains the Documentation of App -->
 
+# React Blogpost Frontend Notes
+
+In this App Backend is used using Appwrite Backend as Service.
+
 It is an app which contains
 - Notes
 - Images
@@ -146,6 +150,7 @@ Creating Services using class and method which makes app to usable with any back
 - Create Methods in This
 - remaining from getCurrentUser methods
 
+
 ## 5: Appwrite Database, File Uploads and Custom Queries
 
 Create appwrite/config.js
@@ -154,6 +159,7 @@ Create appwrite/config.js
 Documents
 - Appwrite / Documentation / Documents / options
 - Appwrite / Documentation / Storage / Methods
+
 
 ## 6: Redux Toolkit Configuration / Setup of Store
 
@@ -224,6 +230,7 @@ For scalability using `React-hook-form`
 - Learning about **AuthLayout** at components/AuthLayout.jsx
 Creating as protected container to provide the protection.
 
+
 ## 9: Adding Form and Slug Values in React
 
 - Created RTE and then how to take its control
@@ -243,8 +250,8 @@ Creating the pages in folder.
 - Signup.jsx
 - Post.jsx
 
-
 Creating router in main.jsx
+
 
 ## 11: CORS and Debugging
 
@@ -269,6 +276,7 @@ Debugging Mistakes:
 - post-form code problem file and userData
 - RTE API Problem
 - Tinymce editor problem
+
 
 ### More Improvement Scope
 
@@ -298,6 +306,7 @@ Debugging Mistakes:
 - Configuration such name, framework, build commands, etc
 - Add Environment Variable
 - Deploy
+
 
 ## 13: Assignments in React
 
