@@ -1,0 +1,51 @@
+# Git Notes
+# 11 12 2025
+
+
+# Adding stage area
+-> git add filename.txt
+
+# check status
+-> git status
+
+# delete file
+-> rm -rf names.txt
+
+# to add all files
+-> git add .
+
+# commit area files with name
+-> git commit -m 'Commiting all files'
+
+
+# delete the commit
+# first check commits
+-> git log
+# copy earlier id
+-> git reset <paste-id>
+# All changes goes to out of stage
+# need to add in stage area again
+
+# you want store changes but not commit
+# first stage all changes
+-> git add .
+# stash the changes
+-> git stash
+
+
+# write inside file
+-> vi names.txt
+-> Write something
+-> :qa!
+
+# From stash to unstage
+-> git stash pop
+
+# To clear stash
+-> git stash clear
+
+// 25:00
+
+
+
+

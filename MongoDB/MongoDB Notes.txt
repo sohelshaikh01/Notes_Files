@@ -1,0 +1,175 @@
+# MongoDB Lecture
+
+# ------------------------------------------
+# 09 12 2025 ###############################
+
+# To Run Mongo Shell in CMD
+# -> mongosh
+# It will convert it into Mongo Shell
+
+show dbs 
+#show databases
+
+show collections  
+#to see collections
+
+db.createCollection("Employee") 
+#to create collections
+
+db.collectionName.find() 
+#get all data in collectionName
+
+db.collectionName.insertOne({ "dept_id": 1, "dept_name": "HR" })
+# to insert data in collectionName
+# if collection not exists, it is created
+
+# ------------------------------------------
+# 10 12 2025 ###############################
+
+#Insert multiple fields in collection
+db.department.insertMany([{"dept_id": 2, "dept_name": "MCA"}, {"dept_id": 3, "dept_name": "Marketing"}])
+
+
+#Adding Multiple Records at once
+db.Employee.insertMany([{Id: 1, Name: "Kavita", Address: { City: "Amritsar", State: "Punjab"}}, 
+{Id: 2, Name: "Harsh", Address: {City: "Banglore", State: "Andra Pradesh"}}])
+
+#Finding record in data
+db.Employee.find({ Salary: 50000})
+
+
+#Update one document
+db.Employee.updateOne({Name: "Aryan"}, {$set: { Salary: 45000}})
+
+# Update multiple documents
+db.Employee.updateMany({}, {$set: { Age: 25}})
+
+# Update multiple values and also add fields
+db.Employee.updateMany({}, { $set: { Hobby: ["Singing", "Art"]}})
+
+
+# Update single value
+db.Employee.updateOne({ID: 3}, {$set: {Hobby: "Swimming"}})
+
+
+#Inserting & Updating nested data
+db.Employee.updateOne({ Name: "Aryan"}, {$set: {idcards: { hasPanCard: true, hasAadharCard: true }}})
+
+
+#Count all data
+db.Employee.find().count();
+
+
+#Increament Operator
+db.Employee.updateMany({}, { $inc: { Age: 1}})
+
+#Find Name inside it
+db.Employee.find({ Name: {$in: ["Arya", "Aryan"]}})
+
+#Find Name not in
+db.Employee.find({ Name: {$nin: [ "Arya", "Titanic"]}})
+
+
+
+#Skip Records with limit
+db.Employee.find({}).skip(2).limit(2)
+
+
+#To sort data - Not working
+db.Employee.find({}).sort({ Age: -1}))
+
+
+#Delete Many - Do carefully. 
+if {} at beginning then it will delete all documents.
+db.Employee.deleteMany({ Name: "Aryan" })
+
+
+# $group is used to group items by specific field
+ db.Employee.aggregate([{$group: {_id: "$Department", count: { $sum: 1}}}])
+
+# $push is used to add an element to an array field
+# using with $each Operator
+
+
+# Update Specific Employees data using array
+db.Employee.updateMany({ Name: { $in: ['Arjun', 'Rohit', 'Neha']}}, { $push: { Hobbies: { $each: ["Basketball", "Photography" ] }}} )
+
+# If Hobbies is not array then it will not work
+# It Adds it as duplicate if already exists
+
+# $size Operator
+db.Employee.find( { $expr: { $gt: [ { $size: "$Hobbies" }, 1] }} )
+
+$type filter string and array type values
+db.Employee.find( {Hobbies: {$type: "array"},  $expr: { $gt: [ { $size: "$Hobbies" }, 1] }} )
+
+
+# $unset to delete the field from document
+db.Employee.updateOne( { Name: "Rohit"}, { $unset: { Hobbies: "" }})
+
+
+## ------------------------------------ ##
+# 19 12 2025 Last Lecture
+
+# Add specific date to single Employee
+db.Employee.updateOne({Name: 'Arjun'}, {$set: {DOJ: new Date("2024-11-20")}} )
+
+# Add field in all records of 'Date'
+db.Employee.updateMany({}, {$set: {DOJ: new Date() }} )
+# update date for each records later
+
+
+# Find Employee joins after the date
+db.Employee.find({DOJ: {$gt: new Date("2024-01-01") }} )
+# Find Employees joins before the date
+db.Employee.find({DOJ: {$gt: new Date("2024-01-01") }} )
+
+# Find data using object _id
+db.Employee.find({ _id: ObjectId('69424d60ad2d2b51891e2621')}, { Name: 1, Department: 1, Salary: 1, _id: 1})
+
+# Return other fields than mentioned
+db.Employee.find({ _id: ObjectId('69424d60ad2d2b51891e2621')}, { Name: 0, Department: 0, Salary: 0, _id: 0})
+
+# To Get Details of All Records with Specific fields
+ db.Employee.find({}, {Name: 1, Department: 1, Salary: 1, _id: 1 })
+
+
+
+## Compare Operetors ----------------- 
+
+# Find Salary not equals to
+db.Employee.find({ Salary: {$ne: 30000} })
+
+
+## String Operators ------------------
+
+# Find Document where Name begins with 'S'
+db.Employee.find({ Name: {$regex: /^S/ }} )
+ 
+# Find Document where Name Ends with 'S' - case sensitive
+db.Employee.find({ Name: {$regex: /S$/ }})
+
+# Find Document where Name contains the 'Character' at any position
+db.Employee.find({ Name: { $regex: /j/, $options: 'i' }} )
+# Not case-sensitive
+
+
+## Skip, Limit ----------------------
+
+# To retrive third, fourth and fifth record
+db.Employee.find().skip(2).limit(3)
+
+# Update values with Null
+db.Employee.updateMany({Id { $in: [3, 4] }}, { $set: {Salary: null } })
+
+
+# Display document with Null value
+db.Employee.find({ Salary: null })
+
+
+# To remove field use '$unset'
+# Remove the field having null values from document
+db.Employee.updateMany({ Id: {$in: [3, 4] }}, { $unset: { Salary: "" } })
+
+
+

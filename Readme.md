@@ -258,53 +258,6 @@ To push file to the main github a/c from it was cloned/copied.
 - But this can update/change the fork/cloned file in your account.
 - If you push file branch to the upstream account then your fork/clone repo in you’re a/c may not be change, the upstream may contain more commits than your repo file.
 
-### Merging all files in one commit
-
-1) `git rebase -i idOfFirst/AnyEarlierCommit`
-It will merge all present changes in that earlier id commit.
-This do squash and update changes to given id commit.
-Then in new window interface : replace ‘pick’ by ‘s’ to merge all changes and files.
-
-2) reset the id , then stash to unstage then stage return the files.
-
-3) `git reset id / $ git reset --hard idAnyEarlierFirst `
-This make one commit with removing all earlier directory file change.
-
-### ADVANCED GIT TECHNIQUES AND SHORTCUTS
-
-Use this commad after having good experience in git and carefully.
-In GitHub using > (period key) - you can edit any repository of GitHub in Vs code but can’t use terminal because of cloud Vs code.
-
-`git log --graph --oneline –decorate`
-This give git log history in filtered & sorted form.
-
-`git bisect start`
-To get last working / error free commit to get out of bug problem in code.
-Initiates a binary search to find a faulty commit.
-
-`git bisect good / bad`
-For each commit later to move further commits to know which commit to be fixed.
-Mark commits as good or bad in binary search.
-
-`git reflog`
-Shows a log of all references, useful for undoing changes.
-
-### GIT UPSTREAM COMMANDS
-
-To copying github repo in your.
-Using fork option to copy any other github repository in own account.
-
-`git clone urlofRepo/sshofrepo`
-The second way.
-
-`git clone ‘SSH url of file’ folderName`
-Clone in it your computer folder.
-Always open the git bash in new folder for cloning files.
-After cloning any repo open it and go inside.
-
-`git remote add upstream`
-To see where the code folder is fork/copy/clone.
-
 
 </div>
 
@@ -540,6 +493,53 @@ Interactive rebase based on commit IDs.
 `git rebase master –interactive`
 To combine all commit of branch in to 1 and commit it to master branch.
 Using Hooks in repo to run test before committing with remote.
+
+### Merging all files in one commit
+
+1) `git rebase -i idOfFirst/AnyEarlierCommit`
+It will merge all present changes in that earlier id commit.
+This do squash and update changes to given id commit.
+Then in new window interface : replace ‘pick’ by ‘s’ to merge all changes and files.
+
+2) reset the id , then stash to unstage then stage return the files.
+
+3) `git reset id / $ git reset --hard idAnyEarlierFirst `
+This make one commit with removing all earlier directory file change.
+
+### ADVANCED GIT TECHNIQUES AND SHORTCUTS
+
+Use this commad after having good experience in git and carefully.
+In GitHub using > (period key) - you can edit any repository of GitHub in Vs code but can’t use terminal because of cloud Vs code.
+
+`git log --graph --oneline –decorate`
+This give git log history in filtered & sorted form.
+
+`git bisect start`
+To get last working / error free commit to get out of bug problem in code.
+Initiates a binary search to find a faulty commit.
+
+`git bisect good / bad`
+For each commit later to move further commits to know which commit to be fixed.
+Mark commits as good or bad in binary search.
+
+`git reflog`
+Shows a log of all references, useful for undoing changes.
+
+### GIT UPSTREAM COMMANDS
+
+To copying github repo in your.
+Using fork option to copy any other github repository in own account.
+
+`git clone urlofRepo/sshofrepo`
+The second way.
+
+`git clone ‘SSH url of file’ folderName`
+Clone in it your computer folder.
+Always open the git bash in new folder for cloning files.
+After cloning any repo open it and go inside.
+
+`git remote add upstream`
+To see where the code folder is fork/copy/clone.
 
 
 </div>

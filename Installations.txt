@@ -1,0 +1,21 @@
+Complete Lecture 1: 10 Sept 2025
+
+Environment setup
+🤖 Install Vistual Studio
+🤖 Install Node.js
+
+-------------------------------------
+
+To Use anythings use 'path' command in env
+for using packages in any folder
+
+To Navigate  in Cmd --------------
+
+md [name] : create folder
+rd : to delete folder
+
+--------------------------------------
+
+Git key: name.git
+
+--------------------------------------

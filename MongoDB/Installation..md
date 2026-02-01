@@ -1,35 +1,11 @@
 MongoDB Installation and Notes
 
-1. Download and Install MongoDB
+1. Install MongoDB
 
-**Step 1: Download MongoDB Community Server**
-
-- Go to the official MongoDB website.
-- Select MongoDB Community Server from the available options.
-- Choose the MSI file suitable for your operating system.
-- Click the Download button.
-
-**Step 2: Install MongoDB**
-    
-- Run the downloaded MSI installer.
-- Follow the on-screen instructions to complete the installation.
-
-**Step 3: Access MongoDB Binaries**
-
-- Create data/db folder in local Disk C
-- Open a new terminal or command prompt.
-- Navigate to the directory where MongoDB is installed: [C:\Program Files\MongoDB\Server\7.0\bin]
-- - Then copy the path 
-- Add it to new environment variables
-
-**Step 4: Start the MongoDB Server**
-
-- Open terminal powershell admin by right click on start
-- Enter the command to start the MongoDB server. [mongod]
-- The server will now run, allowing you to interact with your databases.
-
-- Note: The mongod server must be running to connect or create databases.
-- If the server stops, you must restart it using the same command in the terminal.
+- Go on Official Website
+- download MSI File
+- Install File
+- Give path to env
 
 **To Install Mongo Shell**
 - It is built-in mongoDB compass

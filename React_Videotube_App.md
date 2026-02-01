@@ -56,7 +56,7 @@ src/  use git bash
 
 Creating directories:
 - src/
-- `mkdir controllers, db, middlewares, models, routes, utils`
+- `mkdir controllers db middlewares models routes utils`
 
 ### Configuring prettier files
 
@@ -277,8 +277,6 @@ Create /login and /logout with auth.middleware
     refresh token saved in database for long time and used to create accesstoken from it to loggin user without needing username and password
     access token is for short period of time and create new access token
 -->
-
-
 
 ## Access and Refresh Token
 
